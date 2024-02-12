@@ -9,16 +9,32 @@
     <meta name="description" content="Legislative Assembly Web App - Transparency Portal">
 </head>
 <body>
-    <header>
-        <h1>Legislative Assembly Web App</h1>
-    </header>
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <div class="carousel-item active">
+                <img src="Ontario-Legislature-01-web.jpg" alt="Image 1">
+                <h2>Legislative Assembly of ontario</h2>
+            </div>
+            <div class="carousel-item">
+                <img src="Wordmark-Asymmetrical-Colour_English1x.jpg" alt="Image 2">
+                <h2>Programs</h2>
+            </div>
+            <div class="carousel-item">
+                <img src="canada1509_2.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+    <div class="carousel-arrows">
+        <button onclick="prevSlide()">❮</button>
+        <button onclick="nextSlide()">❯</button>
+    </div>
     <main>
-        <!-- Existing Content -->
+       
         <section id="data-list">
-            <!-- Data will be displayed here -->
+            <!-- displayed here -->
         </section>
         <section id="form-section">
-            <h2>Submit Data</h2>
+            <h2>Search by actions</h2>
             <form id="data-form">
                 <label for="text-input">Enter Text:</label>
                 <input type="text" id="text-input" required>
@@ -28,15 +44,22 @@
             </form>
         </section>
 
-        <!-- Transparency Portal Section -->
+        <!-- Transparency Portal  -->
         <section id="transparency-portal">
-            <h2>Portal Legislativo</h2>
+            <h2>Legislative Portal Actions Map</h2>
             <p>The legislative portal is a transparency tool that intelligently connects the actions of Senators, State Deputies, Federal Deputies, and the population, providing essential information and improving transparency and oversight conditions, complying with the Access to Information Law</p>
 
             <!-- Map Section -->
             <div id="map" style="height: 400px;"></div>
         </section>
     </main>
+    <footer>
+        <div id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: ontarioassemblyl@example.ca</p>
+            <p>Phone: (416) 325-7500/p>
+        </div>
+    </footer>
     <script src="app.js"></script>
     <script src="map.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
